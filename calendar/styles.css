@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: auto;
+    padding: 10px;
+    margin: 10px;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 10px auto;
+}
+
+.calendar {
+    width: 100%;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #4a6fa5;
+    color: white;
+}
+
+.calendar-header button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 5px 15px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.calendar-header button:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    background: #f8f9fa;
+    padding: 10px 0;
+    text-align: center;
+    font-weight: 600;
+    color: #555;
+}
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 4px;
+    padding: 8px;
+    min-height: 200px;
+}
+
+.day {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    cursor: pointer;
+    transition: all 0.2s;
+    padding: 2px;
+    margin: 2px;
+}
+
+.day:hover {
+    background: #e9ecef;
+}
+
+.today {
+    position: relative;
+    background-color: #4a6fa5;
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    margin: 0 auto;
+}
+
+.day.selected {
+    background-color: #e3f2fd;
+    border-radius: 50%;
+    font-weight: bold;
+    color: #1976d2;
+}
+
+.day.selected.today {
+    background-color: #3a5f8a;
+    color: white;
+}
+
+.other-month {
+    color: #adb5bd;
+}
+
+@media (max-width: 600px) {
+    .calendar-header h1 {
+        font-size: 1.2rem;
+    }
+    
+    .weekdays div, .day {
+        font-size: 0.9rem;
+    }
+    
+    .calendar-header button {
+        padding: 2px 10px;
+    }
+}
