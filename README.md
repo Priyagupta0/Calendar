@@ -4,7 +4,11 @@ A sleek and fully responsive **Calendar Web Application** built using **HTML, CS
 This calendar displays the current month, highlights today's date, and allows users to navigate between months.
 
 ---
+## 🌐 Live Demo
 
+Check out the live version of the calendar here: [🔗 View Calendar](https://priyacalendar.netlify.app/)
+
+---
 ## ✨ Features
 
 - 📆 Displays full calendar with correct days/months/year
@@ -14,7 +18,11 @@ This calendar displays the current month, highlights today's date, and allows us
 - 🎨 Clean and modern user interface
 
 ---
+## Screenshot of project
 
+![image](https://github.com/user-attachments/assets/bba5e8b0-de83-45af-ba46-4bafa2395c68)
+
+---
 ## 🛠️ Technologies Used
 
 - **HTML5** – Markup and structure  
